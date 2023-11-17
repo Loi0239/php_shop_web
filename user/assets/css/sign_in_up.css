@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+  --main-color: #66FCF1;
+  --white: #ffffff;
+  --black: #13131a;
+  --bg: #010103;
+  --orange: #fca935;
+  --border: .1rem solid rgba(255,255,255,.3);
+}
+
+.header h1{
+    font-size: 4rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+main{
+  background: linear-gradient(0, #11132c, #181a35);
+}
+
+.wrapper{
+    background: url(../img/background-signin-up.jpg) center /contain no-repeat;
+    height: 85vh;
+    margin-top: 12rem;
+}
+
+.wrapper-signin{
+    height: 85vh;
+    padding-top: 4%;
+}
+
+.wrapper-signup{
+    height: 100vh;
+    padding-top: 2%;
+}
+
+.wrapper-content{
+    margin-left: 16%;
+    width: 30%;
+    padding: 1.5rem 2rem;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.wrapper-content h1{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+.wrapper-content form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper-content form input{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 12px;
+    margin: 12px;
+    outline: 1px solid #ccc ;
+}
+
+.wrapper-content form .notify{
+    font-size: 1.2rem;
+}
+
+.wrapper-content form button{
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.wrapper-content ::placeholder{
+    color: #ccc;
+}
+
+.wrapper-content .link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.wrapper-content a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.wrapper-content a:hover{
+    color: var(--orange);
+}
+
+.link a:nth-child(1){
+    float: left;
+}
+
+.link a:nth-child(2){
+    float: right;
+}
+.wrapper-content .divide-button,
+.wrapper-content .divide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-content hr{
+    width: 46%;
+}
+
+.wrapper-content span{
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+
+.wrapper-content .btn-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.8rem 1.6rem;
+    margin: 0 1rem;
+    width: 44%;
+    background-color: var(--white);
+    border: 1px solid #ccc;
+}
+
+.wrapper-content .btn-icon:hover{
+    background-color: #eee;
+}
+
+.wrapper-content .img-icon{
+    width: 20%;
+}
+
+.wrapper-content .img-icon-fb{
+    width: 12%;
+    margin-right: 6px;
+}
+
+.wrapper-content .btn-signup{
+    margin: 1rem 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.wrapper-content .btn-signup a{
+    font-size: 1.4rem;
+}
+
+@media (max-width:1240px) {
+    .wrapper-content a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:900px){
+    .wrapper-signin{
+        padding-top: 8%;
+    }
+
+    .wrapper-signin{
+        padding-top: 4%;
+    }
+
+    .wrapper-content h1{
+        font-size: 2rem;
+    }
+
+    .wrapper-content form input{
+        font-size: 0.8rem;
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .wrapper-content form button{
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .wrapper-content .divide-button{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .wrapper-content .btn-icon{
+        margin: 1rem;
+        width: 80%;
+    }
+
+    .wrapper-content a{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:650px){
+    .wrapper-content{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .wrapper-content .btn-signup a,
+    .wrapper-content .btn-signup{
+        font-size: 1rem;
+    }
+}

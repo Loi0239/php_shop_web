@@ -1,0 +1,158 @@
+.show_all{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 10rem;
+    background: white;
+    padding: 2rem 2rem;
+    margin: 2rem 0;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+}
+
+.show_all::before{
+    content: "";
+    position: absolute;
+    top: -1.1rem;
+    left: -0.3rem;
+    width: 101%;
+    height: 1rem;
+    background-color: white;
+}
+
+.show_all input[type="checkbox"]{
+    position: relative;
+    top: 0.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 8px;
+    margin-left: 2px;
+}
+
+.show_items,
+.show_item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.show_items{
+    padding: 2rem 2rem;
+    box-shadow: 0 0 2px #ccc;
+    flex-wrap: wrap;
+}
+
+.show_item{
+    margin: 2rem 0;
+}
+
+.show_pro{
+    display: flex;
+    align-items: center;
+}
+
+.show_pro input[type="checkbox"]{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 8px;
+}
+
+.show_pro img{
+    width: 15%;
+    margin: 0 0.3rem;
+}
+
+.show_pro h5{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.price_cart,
+.total_price_cart{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.price_cart{
+    color: #222;
+}
+
+.total_price_cart{
+    color: red;
+}
+
+.qty{
+    display: flex;
+    align-items: center;
+}
+
+.qty .count{
+    width: 30%;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #999;
+}
+
+.qty .increment,
+.qty .decrement{
+    margin: 0 0.6rem;
+    padding: 0.25rem 0.8rem;
+    border: 1px solid #999;
+    background-color: #eee;
+}
+
+.qty .decrement{
+    padding: 0.25rem 1rem;
+
+}
+
+.delete{
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+}
+
+.box_buy{
+    position: sticky;
+    top: 10rem;
+    margin: 2rem 0 13rem;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.box_buy .label_price,
+.box_buy .label_total_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_buy .label{
+    font-size: 1.4rem;
+}
+
+.box_buy .price{
+    font-weight: 400;
+}
+
+.box_buy .total_price{
+    font-size: 2.5rem;
+    color: red;
+}
+
+.box_buy .btn_update_cart,
+.box_buy .btn_buy{
+    width: 100%;
+    font-size: 2rem;
+    margin: 1rem 0 0;
+    padding: 1rem 0;
+    background-color: white;
+    border: 1px solid var(--orange);
+}
+.box_buy .btn_update_cart:hover,
+.box_buy .btn_buy:hover{
+    background-color: #fed295;
+    font-weight: 600;
+}

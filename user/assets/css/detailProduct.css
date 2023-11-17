@@ -1,0 +1,683 @@
+.product {
+  padding: 4rem;
+  display: flex;
+  gap: 5rem;
+  background: #eee;
+}
+
+.product .column {
+  flex: 1;
+  background-color: #fff;
+  border: var(--border);
+  border-radius: 1.2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.col-1,.col-3{
+  position: sticky;
+  top: 11rem;
+}
+
+.col-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 74rem;
+}
+
+.col-1 .main-image {
+  height: 40rem; 
+  padding: 2rem;
+  border: .2rem solid #000;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+}
+
+.col-1 .main-image img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.col-1 .slider-container {
+  max-width: 400px;
+}
+
+.col-1 .slider-thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-1 .slider-thumbnails .thumbnail {
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.col-1 .slider-thumbnails .thumbnail img{
+  height: 6rem;
+  padding: .3rem;
+  object-fit: contain; 
+}
+
+
+.thumbnail.selected-thumbnail {
+  border: 3px solid rgb(0, 64, 255);
+}
+
+.thumbnail:hover{
+  border: 3px solid #000;
+}
+
+.col-1 .features{
+  width: 45rem;
+  padding: 2rem;
+}
+
+.col-1 .features h2{
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: .8rem;
+}
+
+.col-1 .features .row i{
+  font-size: 1.5rem;
+  padding-top: .5rem;
+  color: rgb(0, 64, 255);
+}
+
+.col-1 .features .row p{
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  padding: .3rem;
+}
+
+.col-2 .info{
+  display: flex;
+  margin: 1rem 0;
+}
+
+.col-2 .info h4{
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0 .9rem;
+  color: rgb(0, 64, 255);
+  background-color: rgb(234, 239, 255);
+  border-radius: 2rem;
+}
+
+.col-2 .info p{
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.col-2 h1{
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: .9rem;
+}
+
+.col-2 .rate{
+  font-size: 1.6rem;
+}
+
+.col-2 .rate i{
+  color: orange;
+  font-size: 1.3rem;
+}
+
+.col-2 .rate span{
+  color: #aaa;
+}
+
+.col-2 .price{
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: .6rem;
+}
+
+.col-2 .price h1{
+  font-size: 3rem;
+}
+
+.col-2 .price span{
+  display: inline-block;
+  font-size: 1.4rem;
+  border-radius: .8rem;
+  background-color: #f0f0f6;
+}
+
+.col-2 .details{
+  margin-top: 1rem;
+}
+
+.col-2 .details h2{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.col-2 .details .row{
+  display: flex;  
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.col-2 .details .row:last-child{
+  border: none;
+}
+
+.col-2 .details .row span,
+.col-2 .details .row div{
+  width: 24rem;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.col-2 .details .row span{
+  color: #aaa;
+}
+
+.col-2 .description h2{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+.col-2 .description p{
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.col-2 .description ul li{
+  font-size: 1.5rem;
+}
+
+.col-3{
+  height: 38rem;
+}
+
+.col-3 .heading{
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.col-3 .heading img{
+  height: 5rem;
+  padding-right: 1rem;
+}
+
+.col-3 .heading h2{
+  text-transform: none;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.col-3 .quantity{
+  margin: .2rem 0;
+}
+
+.col-3 .quantity h3{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+.col-3 .quantity .quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.col-3 .quantity .quantity-input {
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  border: var(--border);
+  margin: 0 1rem;
+  font-size: 1.6rem;
+}
+
+.col-3 .quantity .quantity-button {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.6rem;
+}
+
+.col-3 .total h2{
+  font-size: 1.6rem;
+}
+
+.col-3 .total span{
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.col-3 .buy,
+.col-3 .cart{
+  display: block;
+  font-size: 2rem;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.col-3 .buy{
+  color: #fff;
+  background-color: rgb(255, 80, 80);
+}
+
+.col-3 .buy:hover{
+  opacity: .8;
+}
+
+.col-3 .cart{
+  color: rgb(0, 64, 255);
+  background-color: #fff;
+  border: .1rem solid rgb(0, 64, 255);
+}
+
+.col-3 .cart:hover{
+  color: #fff;
+  background-color: rgb(0, 64, 255);
+}
+
+.comment{
+  background-color: #eee;
+  padding: 0 4rem 4rem 4rem;
+}
+
+.comment .wrap{
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: var(--border);
+}
+
+.wrap h1{
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.wrap .box{
+  display: flex;
+}
+
+.wrap .box .overview{
+  width: 80.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .box .overview h2{
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.wrap .box .overview .heading {
+  color: #000;
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+.wrap .box .overview .fa {
+  font-size: 2.2rem;
+  color: orange;
+}
+
+.wrap .box .overview .row{
+  display: flex;
+}
+
+/* Three column layout */
+.wrap .box .overview .side {
+  width: 15%;
+  margin-top:10px;
+}
+
+.wrap .box .overview .side div{
+  font-size: 1.4rem;
+}
+
+.wrap .box .overview .middle {
+  margin-top:10px;
+  width: 70%;
+}
+
+/* Place text to the right */
+.wrap .box .overview .right {
+  text-align: right;
+}
+
+/* The bar container */
+.wrap .box .overview .bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 4rem;
+}
+
+/* Individual bars */
+.wrap .box .overview .bar-5 { border-radius: 4rem; width: 60%; height: 18px; background-color: #04AA6D;}
+.wrap .box .overview .bar-4 { border-radius: 4rem; width: 30%; height: 18px; background-color: #2196F3;}
+.wrap .box .overview .bar-3 { border-radius: 4rem; width: 10%; height: 18px; background-color: #00bcd4;}
+.wrap .box .overview .bar-2 { border-radius: 4rem; width: 4%; height: 18px; background-color: #ff9800;}
+.wrap .box .overview .bar-1 { border-radius: 4rem; width: 15%; height: 18px; background-color: #f44336;}
+
+.wrap .box .overview-info{
+  padding-left: 2rem;
+  margin-left: 2rem;
+  border-left: .1rem solid #ccc;
+}
+
+.wrap .box .overview-info .heading{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.wrap .box .overview-info .heading span{
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+
+.wrap .box .overview-info .row{
+  display: flex;
+  flex-direction: column;
+  padding: .4rem 0;
+}
+
+.wrap .box .overview-info .row span{
+  padding: .4rem 1rem;
+  font-size: 1.4rem;
+}
+
+.wrap .box .overview-info .row .fa-plus{
+  color: #04AA6D;
+}
+
+.wrap .box .overview-info .row .fa-minus{
+  color: #f44336;
+}
+
+.wrap .box .overview-info .row i{
+  padding-right: 0.5rem;
+}
+
+/* Mở rộng, thu gọn trang */
+
+.cutoff-text{
+  --max-lines: 3;
+  --line-height: 1.4;
+
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  line-height: var(--line-height);;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.cutoff-text:has(+ .expand-btn:not(:checked))::before{
+  content: "";
+  position: absolute;
+  height: calc(1em * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, #fff);
+}
+
+.expand-btn{
+  width: 100%;
+  font-size: 1.6rem;
+  color: rgb(0, 64, 255);
+  text-align: center;
+  appearance: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.expand-btn:hover{
+  opacity: .7;
+}
+
+.expand-btn::before{
+  content: "Xem thêm";
+}
+
+.expand-btn:checked::before{
+  content: "Thu gọn";
+}
+
+.cutoff-text:has(+ .expand-btn:checked){
+  max-height: none;
+}
+
+.user{
+  width: 52.8rem;
+  padding: 1rem;
+}
+
+.user .heading{
+  display: flex;
+}
+
+.user .heading .logo{
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100rem;
+  background: #aed0ec;
+  color: #000;
+}
+
+.user .heading .name{
+  padding-left: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.user .heading .name h1{
+  color: #000;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.user .heading .name span{
+  color: #000;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-transform: none;
+}
+
+.user .tus,
+.user .like{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.user .tus .title,
+.user .tus p,
+.user .like .title,
+.user .like p{
+  font-size: 1.3rem;
+}
+
+.react{
+  padding: 2rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.react .heading{
+  font-size: 1.6rem;
+  color: orange;
+}
+
+.react .heading span{
+  text-transform: none;
+  color: #000;
+}
+
+.react h4{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(0, 159, 0);
+  padding: .4rem;
+}
+
+.react p{
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.react .img-container{
+  padding: .5rem 0;
+}
+
+.react .img-container img{
+  height: 10rem;
+  border-radius: 1.8rem;
+}
+
+.react span{
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #aaa;
+  padding: .3rem 0;
+}
+
+.react .contact{
+  padding: .7rem;
+  width: 80rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.react .contact h4{
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.sub-react{
+  padding: .8rem;
+  margin-bottom: 1rem;
+  background: #eee;
+}
+
+.sub-react .heading{
+  display: flex;
+}
+
+.sub-react .heading .logo{
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100rem;
+  background: #aed0ec;
+  color: #000;
+}
+
+.sub-react .heading h4{
+  color: #000;
+}
+
+.sub-react .heading h4 span{
+  color: #aaa;
+  font-size: 1.4rem;
+}
+
+.sub-react p{
+  padding: 0 3.4rem;
+}
+
+.react h3{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2196F3;
+}
+
+.react h3 i{
+  padding: 0.5rem;
+}
+
+.add_cart h2{
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.add_cart .counter{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.add_cart .increment,
+.add_cart .decrement{
+    border: 1px solid #ccc;
+    padding: 0rem 1rem;
+    font-size: 2rem;
+}
+
+.add_cart .increment:hover,
+.add_cart .decrement:hover{
+    background-color: var(--orange);
+    color: white;
+}
+
+.add_cart .count{
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 1rem;
+    width: 5rem;
+}
+
+.add_cart .count:focus{
+    border: 1px solid var(--orange);
+    box-shadow: 0 0 3px var(--orange);
+}
+
+.add_cart .sub-total{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.add_cart .sub-total span{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.add_cart .btn_add_cart,
+.add_cart .btn_buy{
+    width: 100%;
+    font-size: 2rem;
+    margin: 1rem 0 0;
+    padding: 1rem 0;
+    background-color: white;
+    border: 1px solid var(--orange);
+}
+
+.add_cart .btn_add_cart:hover,
+.add_cart .btn_buy:hover{
+    background-color: #fed295;
+    font-weight: 600;
+}
