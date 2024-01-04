@@ -1,0 +1,154 @@
+::placeholder{
+    color: #bbb;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+
+}
+
+.container form {
+  padding: 20px;
+  width: 80%;
+  background: #fff;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+}
+
+.container form .row .title {
+  font-size: 3rem;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .inputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form .row .inputBox span{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.container form .row .inputBox input{
+  display: inline-block;
+  width: 70%;
+}
+
+.container form .row .inputBox input[type=email]{
+  text-transform: none;
+}
+
+.container form .row .inputBox input {
+  border: 1px solid #ccc;
+  padding: 0.8rem 1.2rem;
+  font-size: 15px;
+}
+
+.container form .row .inputBox input[type=radio] {
+  margin: 5px;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.container form .row .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.container form .row .totalBox-select,
+.container form .row .box-select{
+    display: flex;
+    flex-direction: row;
+}
+
+.container form .row .box-select{
+    margin: 0 1rem 0 0;
+}
+
+.container form .row .box-select .select-gender{
+    width: 1rem;
+}
+
+.container form .row .box-select span{
+    font-size: 1.6rem;
+}
+
+.container form .row .grid {
+  display: grid;
+  align-items: center;
+  gap: 15px;
+}
+
+.container form .row .grid-2{
+    grid-template-columns: 50% 50%;
+}
+
+.container form .row .grid-3{
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.container form .row .grid .selectBox {
+    width: 90%;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container form .row .grid-3 input{
+    width: 150%;
+}
+
+.container form .row .grid-2 input{
+    width: 90%;
+}
+
+.container form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 2rem 0 0;
+  font-size: 17px;
+  background: #27ae60;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover {
+  background: #2ecc71;
+}
+
+.error-message {
+  color: red;
+}
+
+select{
+  margin-right: 20px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container form {
+    width: 100%;
+  }
+
+  .container form .row .inputBox,
+  .container form .row .inputBox input[type=text] {
+    width: 100%;
+  }
+
+  .container form .row .flex {
+    flex-direction: column;
+  }
+
+  .container form .row .inputBox input[type=text] {
+    max-width: 100%;
+  }
+}

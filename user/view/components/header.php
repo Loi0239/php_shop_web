@@ -7,22 +7,20 @@
 
 <header class="header">
    <a href="../../../index.php?route=home" class="logo">
-      <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="LOGO">
+      <img src="../../../user/assets/img/logo.png" alt="LOGO">
    </a>
 
    <nav class="navbar">
-      <a href="">home</a>
-      <a href="index.php?route=detailProduct">about</a>
-      <a href="">menu</a>
-      <a href="index.php?route=product">products</a>
-      <a href="">contact</a>
-      <a href="">blogs</a>
+      <a href="index.php">trang chủ</a>
+      <a href="index.php?route=product">sản phẩm</a>
+      <a href="index.php?route=about">về chúng tôi</a>
    </nav>
 
    <div class="icons">
-      <form method="post">
+      <form action="index.php" method="get">
+         <input type="hidden" name="route" value="product">
          <input type="text" name="text-search" class="text-search" placeholder="search here">
-         <button type="submit" name="btn-search"></button>
+         <button type="submit"></button>
       </form>
       <button class="btn-search"><a class="fas fa-search"></a></button>
       <?php
@@ -31,14 +29,18 @@
             echo "
             <a href='#' class='fas fa-user btn-user'></a>
             <ul class='dropdown-user'>
-               <li><a href='#'>
+               <li><a href='index.php?route=infoUser'>
                   <i class='fas fa-user'></i>
-                  user information
+                  Thông tin cá nhân
+               </a></li>
+               <li><a href='index.php?route=invoice'>
+                  <i class='fas fa-user'></i>
+                  Đơn hàng của bạn
                </a></li>
                <hr>
                <li><a href='/user/view/content/signout.php'>
                   <i class='fa-solid fa-right-from-bracket'></i>
-                  sign out
+                  Đăng xuất
                </a></li>
             </ul>
             ";

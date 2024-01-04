@@ -118,19 +118,44 @@
 }
 
 .products .box-container .box{
+    position: relative;
     padding: 3rem;
     text-align: center;
+    text-decoration: none;
     border: var(--border);
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.products .box-container .box a{
-    text-decoration: none;
+.products .box-container .box::before{
+    content: "xem chi tiết";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    font-size: 2rem;
+    font-weight: 500;
+    opacity: .9;
+    transition: all .5s ease;
+}
+
+.products .box-container .box .sold{
+    color: #bbb;
+    font-size: 1.5rem;
 }
 
 .products .box-container .box img{
-    height: 25rem;
+    height: 14rem;
+    width: 100%;
+    object-fit: contain;
     border-radius: 20px;
 }
 
@@ -138,9 +163,11 @@
     color: var(--black);
     font-size: 2rem;
     padding: 1rem 0;
+    margin: 0;
 }
 
 .products .box-container .box .price{
+    color: var(--black);
     font-size: 2.5rem;
     padding: .5rem 0;
 }
@@ -164,46 +191,9 @@
 
 }
 
-/* .products .box-container .box .btn::before,
-.products .box-container .box .btn::after{
-    content: "";
-    position: absolute;
-    border-radius: 12px;
-    width: 0;
-    height: 0;
-    background: rgb(135, 103, 14);
-    z-index: -1;
+.products .box-container .box:hover::before{
+    bottom: 0;
 }
-
-.products .box-container .box .btn::before{
-    top: -0.5rem;
-    left: -0.6rem;
-}
-
-.products .box-container .box .btn::after{
-    bottom: -0.5rem;
-    right: -0.6rem;
-}
-
-.products .box-container .box .btn:hover::before,
-.products .box-container .box .btn:hover::after{
-    animation: border-button .5s ease-in-out forwards;
-}
-
-@keyframes border-button {
-    0%{
-        height: 10%;
-        width: 0;
-    }
-    50%{
-        height: 10%;
-        width: 108%;
-    }
-    100%{
-        height: 120%;
-        width: 108%;
-    }
-} */
 
 .products .box-container .box:hover{
     scale: 1.1;

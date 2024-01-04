@@ -9,10 +9,15 @@
 
     $total_records = $productsController->getTotal_records($iddm);
 
+    if(isset($_GET['text-search'])){
+        $text = $_GET['text-search'];
+        $total_records = $productsController->getSearch_total_records($text);
+    }
+
     if(isset($_GET['page'])) $page = $_GET['page'];
     else $page = 1;
 
-    $limit = 20;
+    $limit = 3;
     $start = ($page-1)*$limit;
     $total_pages = ceil($total_records/$limit);
 
@@ -40,7 +45,7 @@
 
 </head>
 <body>
-<h1>Products Page</h1>
+<h1>Trang sản phẩm</h1>
 
 <div class="container">
     <div class="row">
@@ -55,12 +60,20 @@
         <div class="col-md-9 col-7 products">
             <div class="row">
                 <?php
-                    $productsController->select($iddm,$start,$limit);
+                    if(isset($text)){
+                        $productsController->searchSelect($text,$start,$limit);
+                    }else{
+                        $productsController->select($iddm,$start,$limit);
+                    }                  
                 ?>
             </div>
             <div class="row page-number">
                 <?php
-                    $productsController->pagination($iddm,$page,$total_pages);
+                    if(isset($text)){
+                        $productsController->searchPagination($text,$page,$total_pages);
+                    }else{
+                        $productsController->pagination($iddm,$page,$total_pages);
+                    }
                 ?>
             </div>
         </div>

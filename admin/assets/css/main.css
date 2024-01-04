@@ -143,7 +143,7 @@ main {
 }
 
 .side_bar .sub_menu.show {
-    height: 6.2em;
+    height: 4.2em;
 }
 
 .side_bar .icon {
@@ -162,7 +162,7 @@ main {
     float: right;
     padding: 2em;
     background-color: #eee;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 .content .btn.btn_add{

@@ -45,7 +45,7 @@
 <body>
     <header class="header">
         <a href="../../../index.php" class="logo">
-        <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="LOGO">
+        <img src="../../assets/img/logo.png" alt="LOGO">
         </a>
 
         <h1>Sign Up</h1>
